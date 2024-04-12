@@ -1,1 +1,2 @@
 2. 파일 내용 수정 및 커밋
+3. git merge fast-forward 실습
