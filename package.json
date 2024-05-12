@@ -1,0 +1,15 @@
+{
+  "name": "trunk",
+  "description": "Web Develop Monorepo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hojun3377/trunk"
+  },
+  "author": "hojun3377 <hojun3377@gmail.com>",
+  "packageManager": "yarn@4.2.2",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
