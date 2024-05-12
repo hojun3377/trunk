@@ -7,9 +7,11 @@
   },
   "author": "hojun3377 <hojun3377@gmail.com>",
   "packageManager": "yarn@4.2.2",
-  "type": "module",
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "test-workspace": "yarn workspace test-workspace"
+  }
 }

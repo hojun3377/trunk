@@ -5,6 +5,23 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"figlet@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "figlet@npm:1.7.0"
+  bin:
+    figlet: bin/index.js
+  checksum: 10c0/bedd97fe5fa604002ae8c6bc0b08dea6f9701e0b268f42e601668956f50ff377ef592e24e182a6174a775abde9e2aa77697e324b8681619ae23bc85078439393
+  languageName: node
+  linkType: hard
+
+"test-workspace@workspace:packages/test-workspace":
+  version: 0.0.0-use.local
+  resolution: "test-workspace@workspace:packages/test-workspace"
+  dependencies:
+    figlet: "npm:^1.7.0"
+  languageName: unknown
+  linkType: soft
+
 "trunk@workspace:.":
   version: 0.0.0-use.local
   resolution: "trunk@workspace:."

@@ -1,0 +1,12 @@
+{
+  "name": "test-workspace",
+  "packageManager": "yarn@4.2.2",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "figlet": "^1.7.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
