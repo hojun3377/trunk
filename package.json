@@ -12,6 +12,10 @@
     "packages/*"
   ],
   "scripts": {
+    "dir-tree": "yarn tree --dirs-first -a -I '^\\.git(?!.)|^\\.yarn\\\\(?!patches)(?!plugins)(?!releases)(?!sdks)(?!versions)|^\\.pnp\\.'",
     "test-workspace": "yarn workspace test-workspace"
+  },
+  "devDependencies": {
+    "tree-node-cli": "^1.6.0"
   }
 }
