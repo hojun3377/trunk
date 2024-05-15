@@ -12,8 +12,9 @@
     "packages/*"
   ],
   "scripts": {
-    "dir-tree": "yarn tree --dirs-first -a -I '^\\.git(?!.)|^\\.yarn\\\\(?!patches)(?!plugins)(?!releases)(?!sdks)(?!versions)|^\\.pnp\\.'",
-    "test-workspace": "yarn workspace test-workspace"
+    "dir-tree": "yarn tree --dirs-first -a -I '^\\.git(?!.)|^\\.yarn\\\\(?!patches)(?!plugins)(?!releases)(?!sdks)(?!versions)|^\\.pnp\\.|\\.env'",
+    "test-workspace": "yarn workspace test-workspace",
+    "study-server": "yarn workspace study-server"
   },
   "devDependencies": {
     "tree-node-cli": "^1.6.0"
