@@ -12,7 +12,7 @@
     "packages/*"
   ],
   "scripts": {
-    "dir-tree": "yarn tree --dirs-first -a -I '^\\.git(?!.)|^\\.yarn\\\\(?!patches)(?!plugins)(?!releases)(?!sdks)(?!versions)|^\\.pnp\\.'",
+    "dir-tree": "yarn tree --dirs-first -a -I '^\\.git(?!.)|^\\.yarn\\\\(?!patches)(?!plugins)(?!releases)(?!sdks)(?!versions)|^\\.pnp\\.|\\.env'",
     "test-workspace": "yarn workspace test-workspace",
     "study-server": "yarn workspace study-server"
   },
