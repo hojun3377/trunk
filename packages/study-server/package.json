@@ -1,4 +1,11 @@
 {
   "name": "study-server",
-  "packageManager": "yarn@4.2.2"
+  "type": "module",
+  "packageManager": "yarn@4.2.2",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  }
 }
