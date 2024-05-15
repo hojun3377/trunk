@@ -296,6 +296,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"study-server@workspace:packages/study-server":
+  version: 0.0.0-use.local
+  resolution: "study-server@workspace:packages/study-server"
+  languageName: unknown
+  linkType: soft
+
 "test-workspace@workspace:packages/test-workspace":
   version: 0.0.0-use.local
   resolution: "test-workspace@workspace:packages/test-workspace"
