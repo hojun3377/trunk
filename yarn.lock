@@ -905,6 +905,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"server-book-shop@workspace:packages/server-book-shop":
+  version: 0.0.0-use.local
+  resolution: "server-book-shop@workspace:packages/server-book-shop"
+  dependencies:
+    dotenv: "npm:^16.4.5"
+    express: "npm:^4.19.2"
+  languageName: unknown
+  linkType: soft
+
 "set-function-length@npm:^1.2.1":
   version: 1.2.2
   resolution: "set-function-length@npm:1.2.2"

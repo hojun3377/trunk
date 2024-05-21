@@ -14,7 +14,8 @@
   "scripts": {
     "dir-tree": "yarn tree --dirs-first -a -I '^\\.git(?!.)|^\\.yarn\\\\(?!patches)(?!plugins)(?!releases)(?!sdks)(?!versions)|^\\.pnp\\.|\\.env'",
     "test-workspace": "yarn workspace test-workspace",
-    "study-server": "yarn workspace study-server"
+    "study-server": "yarn workspace study-server",
+    "server-book-shop": "yarn workspace server-book-shop"
   },
   "devDependencies": {
     "tree-node-cli": "^1.6.0"
