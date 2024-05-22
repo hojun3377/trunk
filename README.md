@@ -35,6 +35,18 @@ trunk
 │   ├── git-test-log.txt
 │   └── github-test-log.txt
 ├── packages
+│   ├── server-book-shop
+│   │   ├── src
+│   │   │   ├── middlewares
+│   │   │   ├── routes
+│   │   │   │   ├── books.js
+│   │   │   │   ├── carts.js
+│   │   │   │   ├── likes.js
+│   │   │   │   ├── orders.js
+│   │   │   │   └── users.js
+│   │   │   └── app.js
+│   │   ├── README.md
+│   │   └── package.json
 │   ├── study-server
 │   │   ├── src
 │   │   │   ├── controllers
