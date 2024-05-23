@@ -18,14 +18,6 @@ corepack enable
 yarn install
 ```
 
-### 스크립트
-
-- **yarn test-workspace start**: "Hello World!!"가 figlet으로 콘솔에 출력
-- **yarn dir-tree**: github repo의 폴더 및 파일 트리 구조 콘솔에 출력
-- **yarn study-server start**: domain:1234/login에 대한 HTTP POST 수신만 가능한 서버 프로그램 구동
-  - `{email: test, password: test}`만 로그인 성공
-  - 성공시 jwt 발행(30분) 및 쿠키 송신
-
 ## 디렉토리 구조
 
 ```
