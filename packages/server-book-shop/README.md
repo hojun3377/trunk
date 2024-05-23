@@ -25,7 +25,7 @@ yarn server-book-shop start
 
 ## ERD
 
-![book-shop](https://github.com/hojun3377/trunk/assets/76763854/4453a7de-a05e-49fb-9641-cbebe297c394)
+![book-shop](https://github.com/hojun3377/trunk/assets/76763854/bd9cc077-9eea-4572-a69f-a72e81e7fbe2)
 
 ## 패키지 구조
 
