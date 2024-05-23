@@ -12,11 +12,11 @@
     "packages/*"
   ],
   "scripts": {
-    "tree-root": "yarn tree --dirs-first -a -I '^\\.git(?!.)|^\\.yarn\\\\(?!patches)(?!plugins)(?!releases)(?!sdks)(?!versions)|^\\.pnp\\.|\\.env'",
+    "tree-root": "yarn tree -L 2 --dirs-first -a -I '^\\.git(?!.)|^\\.yarn\\\\(?!patches)(?!plugins)(?!releases)(?!sdks)(?!versions)|^\\.pnp\\.|\\.env'",
+    "tree-server-book-shop": "yarn tree --dirs-first -a -I '\\.env' packages/server-book-shop",
     "test-workspace": "yarn workspace test-workspace",
     "study-server": "yarn workspace study-server",
-    "server-book-shop": "yarn workspace server-book-shop",
-    "tree-server-book-shop": "yarn tree --dirs-first -a -I '\\.env' packages/server-book-shop"
+    "server-book-shop": "yarn workspace server-book-shop"
   },
   "devDependencies": {
     "tree-node-cli": "^1.6.0"
