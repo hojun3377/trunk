@@ -10,7 +10,7 @@
 | **corepack** | v0.28.0  |
 | **yarn**     | v4.2.2   |
 
-## 로컬 환경 구축 및 실행
+## 로컬 환경에서 프로젝트 구축 및 실행
 
 ```
 git clone https://github.com/hojun3377/trunk.git
@@ -32,7 +32,8 @@ yarn server-book-shop start
 ```
 server-book-shop
 ├── src
-│   ├── middlewares
+│   ├── config
+│   │   └── database.js
 │   ├── routes
 │   │   ├── books.js
 │   │   ├── carts.js
@@ -44,15 +45,16 @@ server-book-shop
 └── package.json
 ```
 
-| 파일 및 폴더 이름 |                 설명                  |      상세       |                                     참고                                      |
-| :---------------: | :-----------------------------------: | :-------------: | :---------------------------------------------------------------------------: |
-|        src        |      소스 코드 파일을 모은 폴더       |      폴더       |                                                                               |
-|    middlewares    | 라우트 핸들러 전처리 파일을 모은 폴더 |      폴더       |                                                                               |
-|      routes       |  API 기능별 라우터 파일을 모은 폴더   |      폴더       |                                                                               |
-|       books       |         도서 API 라우터 파일          | Javascript 파일 |                                                                               |
-|       carts       |       장바구니 API 라우터 파일        | Javascript 파일 |                                                                               |
-|       likes       |        좋아요 API 라우터 파일         | Javascript 파일 |                                                                               |
-|      orders       |         주문 API 라우터 파일          | Javascript 파일 |                                                                               |
-|      app.js       |       서버를 실행하는 메인 파일       | Javascript 파일 |                                                                               |
-|     README.md     |          프로젝트 설명 파일           |  markdown 파일  |                                                                               |
-|   package.json    |          프로젝트 명세 파일           |    JSON 파일    | [Manifest (package.json) \| Yarn](https://yarnpkg.com/configuration/manifest) |
+| 파일 및 폴더 이름 |            설명             |                  상세                  |                                                   참고                                                    |
+| :---------------: | :-------------------------: | :------------------------------------: | :-------------------------------------------------------------------------------------------------------: |
+|        src        | 소스 코드 파일 및 폴더 저장 |  model, controller, config, routes 등  |                                                                                                           |
+|      config       |     app 환경 설정 저장      |             database.js 등             |                                                                                                           |
+|    database.js    |        db 연결 설정         |  db 연결에 필요한 config로 pool 생성   | [createPool \| Quickstart](https://sidorares.github.io/node-mysql2/docs/examples/connections/create-pool) |
+|      routes       | API 기능별 라우터 파일 저장 |   /books, /carts, /likes, /orders 등   |                                                                                                           |
+|     books.js      |       도서 API 라우터       |  /books route에 대한 middleware 수행   |                                                                                                           |
+|     carts.js      |     장바구니 API 라우터     |  /carts route에 대한 middleware 수행   |                                                                                                           |
+|     likes.js      |      좋아요 API 라우터      |  /likes route에 대한 middleware 수행   |                                                                                                           |
+|     orders.js     |       주문 API 라우터       |  /orders route에 대한 middleware 수행  |                                                                                                           |
+|      app.js       |      express app 설정       | express app에 대한 route, port 등 설정 |                                                                                                           |
+|     README.md     |    프로젝트 패키지 설명     |             markdown 파일              |                                                                                                           |
+|   package.json    |    프로젝트 패키지 명세     |       프로젝트 패키지 명세 파일        |               [Manifest (package.json) \| Yarn](https://yarnpkg.com/configuration/manifest)               |
