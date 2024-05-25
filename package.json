@@ -19,6 +19,7 @@
     "server-book-shop": "yarn workspace server-book-shop"
   },
   "devDependencies": {
-    "tree-node-cli": "^1.6.0"
+    "tree-node-cli": "^1.6.0",
+    "typescript": "~5.3.0"
   }
 }
